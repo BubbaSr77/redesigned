@@ -1,0 +1,96 @@
+
+
+body {
+    margin: 0%;
+    background-color: black;
+    background-image: url("https://dsm01pap001files.storage.live.com/y4msBylji3tG7y7xuZWfeBh-XzHT1ubMcC5YjDBBswxYMfDvz_kx_yws7KXOTCKzy5c9RrxBvBdjoMX-clGXR9cakOwS4JC6Eb1uQJbKvPsooIuNvle9-F7cXni_ploQ3P79VQoO3RgoUGsT3LSJHKWJmlynbVnOuOrIKH6vwqb5CU4tRFSZaXPNre4AJ5WhAHq?width=1920&height=1248&cropmode=none");
+    background-size: cover;
+    filter: sepia(60%);
+    font-family: cursive;
+    font-weight: bolder;
+    font-size: larger;   
+}
+
+.grid {
+    background-color: #d0cfec;
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+.grid_item {
+    background-color: #d0cfec;
+    text-align: justify;
+    padding: 2rem;
+}
+
+.myportfolio_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1f4 0.4fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "head head"
+        "main aside"
+        "foot aside";
+}
+
+header {
+    grid-area: head;
+    font: white;
+    opacity: 1.75;
+    filter: alpha(opacity=75);
+    position: relative;
+}
+
+.navbar {
+    display: flex;
+    text-align: center;
+    list-style-type:none;
+    justify-content:space-between;
+}
+
+.column-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+  
+.column {
+    padding: 15px;
+    border-left: 7px solid red;
+}
+  
+.column:first-child {
+    border-left: none;
+}
+
+aside {
+    display: flexbox;
+    padding-left: 1125px;
+    padding-bottom: 45px;
+    width: 25%;
+    float: top;
+    grid-area: aside;
+    word-wrap: normal;
+    font-size: medium;
+}
+
+p {
+    padding: 10px;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+
+footer {
+    text-align: center;
+    word-wrap: normal;
+    grid-area: foot;
+    background-color: #9E1B32;
+}
+
