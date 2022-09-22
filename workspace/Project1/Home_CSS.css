@@ -71,9 +71,9 @@ header {
 
 aside {
     display: flexbox;
-    padding-left: 1125px;
-    padding-bottom: 45px;
-    width: 25%;
+    padding-left: 375px;
+    padding-top: 0px;
+    width: 45%;
     float: top;
     grid-area: aside;
     word-wrap: normal;
@@ -81,16 +81,43 @@ aside {
 }
 
 p {
-    padding: 10px;
+    padding: 5px;
     color: #fff;
     mix-blend-mode: difference;
 }
 
+main {
+    display: flexbox;
+    padding-right: 150px;
+    padding-top: 200px;
+    width: 45%;
+    grid-area: main;
+    word-wrap: normal;
+    font-size: medium;
+}
+
+.contact {
+    bottom: 100px;
+    padding-left: 120px;
+    text-align: center;
+    word-wrap: normal;
+    font-size: large;
+    color: #fff;
+    mix-blend-mode: difference;
+}
 
 footer {
     text-align: center;
     word-wrap: normal;
     grid-area: foot;
-    background-color: #9E1B32;
 }
+
+.SDGB1{
+    position: absolute;
+    top: 495px;
+    right: 5px;
+}
+
+
+
 
