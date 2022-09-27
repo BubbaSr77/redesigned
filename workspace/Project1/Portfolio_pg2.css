@@ -1,5 +1,12 @@
+
+*{
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
 body {
-    margin: 0%;
+    margin: 0;
     background-color: black;
     background-image: url("https://dsm01pap001files.storage.live.com/y4msBylji3tG7y7xuZWfeBh-XzHT1ubMcC5YjDBBswxYMfDvz_kx_yws7KXOTCKzy5c9RrxBvBdjoMX-clGXR9cakOwS4JC6Eb1uQJbKvPsooIuNvle9-F7cXni_ploQ3P79VQoO3RgoUGsT3LSJHKWJmlynbVnOuOrIKH6vwqb5CU4tRFSZaXPNre4AJ5WhAHq?width=1920&height=1248&cropmode=none");
     background-size: cover;
@@ -9,10 +16,87 @@ body {
     font-size: larger;   
 }
 
+.slideshow_container{
+    width: 90vmin;
+    height: 75vmin;
+    transform: translate(5%,5%);
+    overflow: hidden;
+    border: 15px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+
+.wrapper{
+    width: 100%;
+    display: flex;
+    animation: slide 20s infinite;
+}
+
+h6{
+    padding: 5px;
+    color: #fff;
+    mix-blend-mode: difference;
+    background-color: blue;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    5%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-100%);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    25%{
+        transform: translateX(-200%);
+    }
+    35%{
+        transform: translateX(-200%);
+    }
+    40%{
+        transform: translateX(-300%);
+    }
+    50%{
+        transform: translateX(-300%);
+    }
+    55%{
+        transform: translateX(-400%);
+    }
+    65%{
+        transform: translateX(-400%);
+    }
+    70%{
+        transform: translateX(-500%);
+    }
+    80%{
+        transform: translateX(-500%);
+    }
+    85%{
+        transform: translateX(-600%);
+    }
+    95%{
+        transform: translateX(-600%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+   
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
 .grid {
     background-color: #d0cfec;
     display: flex;
-    gap: 20px;
+    gap: 10px;
     padding: 10px;
 }
 
@@ -32,7 +116,7 @@ body {
     grid-template-areas: 
         "head head"
         "main aside"
-        "foot aside";
+        "foot foot";
 }
 
 header {
@@ -41,6 +125,13 @@ header {
     opacity: 1.75;
     filter: alpha(opacity=75);
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.redrock{
+    padding-left: 150px;
 }
 
 .navbar {
@@ -51,18 +142,144 @@ header {
 }
 
 .column-container {
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    display: inline-block;
+    padding: 0px 10px;
 }
   
 .column {
-    padding: 15px;
+    padding: 65px;
     border-left: 7px solid red;
 }
   
 .column:first-child {
     border-left: none;
+}
+
+main{
+    display: flexbox;
+    padding-top: 0px;
+    padding-left: 20px;
+    width: 50%;
+    height: 75%;
+    font-weight: bolder;
+    font: white;
+    word-wrap: normal;
+    grid-area: main;
+}
+
+h5{
+    padding: 5px;
+    color: #fff;
+    mix-blend-mode: difference;
+}
+
+aside{
+    display: flexbox;
+    padding-top: 0px;
+    padding-left: 20px;
+    width: 50%;
+    height: 75%;
+    font-weight: bolder;
+    font: white;
+    word-wrap: normal;
+    grid-area: aside;
+}
+
+.wrapper2{
+    margin: auto;
+    width: 500px;
+}
+
+video{
+    width: 100%;
+}
+
+footer {
+    display: flexbox;
+    padding-top: 0px;
+    padding-left: 750px;
+    width: 75%;
+    height: 100%;
+    font-weight: bolder;
+    font: white;
+    word-wrap: normal;
+    grid-area: foot;
+}
+
+.blessings_container{
+    width: 90vmin;
+    height: 75vmin;
+    background-color: darkgrey;
+    transform: translate(5%,5%);
+    overflow: hidden;
+    border: 15px solid #ffffff;
+    border-radius: 8px;
+    box-shadow: 10px 25px 30px rgba(30, 30, 200, 0.3);
+}
+
+.wrapper3{
+    width: 100%;
+    display: flex;
+    animation: slide 30s infinite;
+}
+
+h5{
+    padding: 5px;
+    color: #fff;
+    mix-blend-mode: difference;
+    background-color: blue;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(0);
+    }
+    5%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(-100%);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    25%{
+        transform: translateX(-200%);
+    }
+    35%{
+        transform: translateX(-200%);
+    }
+    40%{
+        transform: translateX(-300%);
+    }
+    50%{
+        transform: translateX(-300%);
+    }
+    55%{
+        transform: translateX(-400%);
+    }
+    65%{
+        transform: translateX(-400%);
+    }
+    70%{
+        transform: translateX(-500%);
+    }
+    80%{
+        transform: translateX(-500%);
+    }
+    85%{
+        transform: translateX(-600%);
+    }
+    95%{
+        transform: translateX(-600%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+   
+}
+
+img{
+    width: 100%;
+    height: 100%;
 }
