@@ -24,6 +24,12 @@ body {
     padding: 2rem;
 }
 
+.audio{
+    display: none;
+    top: -999px;
+    left: -999px;
+}
+
 .myportfolio_container {
     position: absolute;
     width: 100%;
@@ -117,6 +123,8 @@ footer {
     top: 495px;
     right: 5px;
 }
+
+
 
 
 
